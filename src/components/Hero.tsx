@@ -1,14 +1,17 @@
 import { GithubLogo, LinkedinLogo } from "phosphor-react";
 import { Button } from "./ui/button";
+import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 export function Hero() {
   const googleDriveDownloadUrl =
     "https://drive.google.com/uc?export=download&id=1C3GY3ILyNf_DgpxbOtJFsUcWp1ttqXnl";
 
+  const cvLastUpdated = "Agosto de 2025";
+
   return (
     <div
       id="hero"
-      className="flex flex-col md:flex-row items-center sm:items-start  justify-center gap-10 md:gap-12 lg:gap-32 mt-12 px-4 h-[41rem]"
+      className="flex flex-col md:flex-row items-center sm:items-start  justify-center gap-10 md:gap-12 lg:gap-32 mt-12 px-4 h-[38rem]"
     >
       <img
         src="https://ik.imagekit.io/brunogodoy/WhatsApp%20Image%202025-04-06%20at%2022.17.19.jpeg?updatedAt=1754336005577"
@@ -36,15 +39,25 @@ export function Hero() {
         </p>
 
         <span className="flex gap-4 mt-3">
-          <Button asChild>
-            <a
-              href={googleDriveDownloadUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Download CV
-            </a>
-          </Button>
+          <Tooltip>
+            <TooltipTrigger>
+              <Button asChild>
+                <a
+                  href={googleDriveDownloadUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download CV
+                </a>
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="flex justify-center items-center bg-background p-2 rounded-lg">
+              <p className="text-foreground text-sm">
+                Currículo atualizado em {cvLastUpdated} (PDF)
+              </p>
+            </TooltipContent>
+          </Tooltip>
+
           <Button size="icon" variant="outline" asChild>
             <a
               href="https://www.linkedin.com/in/brunogodoydev/"
