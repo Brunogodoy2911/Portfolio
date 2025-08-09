@@ -2,19 +2,21 @@ import { useEffect, useRef, useState } from "react";
 import type { Project } from "@/utils/projects";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
-import {
-  ArrowSquareOut,
-  GithubLogo,
-  MagnifyingGlassPlus,
-} from "phosphor-react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
-import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   type CarouselApi,
 } from "./ui/carousel";
+import {
+  ArrowSquareOut,
+  GithubLogo,
+  MagnifyingGlassPlus,
+} from "phosphor-react";
+
+import Autoplay from "embla-carousel-autoplay";
+
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
 
