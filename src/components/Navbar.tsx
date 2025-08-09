@@ -1,17 +1,17 @@
+import { navLinks } from "@/utils/navLinks";
 import { useTheme } from "./theme-provider";
 import { Button } from "./ui/button";
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "./ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+  SheetTitle,
+} from "./ui/sheet";
 import { Sun, Moon, List } from "phosphor-react";
 
 export function Navbar() {
   const { setTheme, theme } = useTheme();
-
-  const navLinks = [
-    { title: "Home", href: "#" },
-    { title: "Sobre", href: "#sobre" },
-    { title: "Projetos", href: "#projetos" },
-    { title: "Contato", href: "#contato" },
-  ];
 
   return (
     <nav className="flex justify-between md:justify-around items-center px-6 md:px-12 py-8">
@@ -55,6 +55,9 @@ export function Navbar() {
             </Button>
           </SheetTrigger>
           <SheetContent side="right">
+            <SheetTitle className="pl-5 pt-5 text-left text-xl">
+              Menu
+            </SheetTitle>
             <nav className="flex flex-col gap-8 text-center mt-16">
               {navLinks.map((link) => (
                 <SheetClose asChild key={link.title}>
