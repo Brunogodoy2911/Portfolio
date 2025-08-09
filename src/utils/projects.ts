@@ -1,3 +1,13 @@
+import ReactLogo from "../../public/icons/react.svg";
+import TypeScriptLogo from "../../public/icons/typescript.svg";
+import TailwindLogo from "../../public/icons/tailwind.svg";
+import JavaLogo from "../../public/icons/java.svg";
+import SpringBootLogo from "../../public/icons/spring.svg";
+import ExpoLogo from "../../public/icons/expo.svg";
+import GluestackLogo from "../../public/icons/gluestacks.svg";
+import ShadcnLogo from "../../public/icons/shadcn.svg";
+import FirebaseLogo from "../../public/icons/firebase.svg";
+
 export interface Technology {
   name: string;
   img: string;
@@ -25,27 +35,27 @@ export const projects: Project[] = [
     tecnologies: [
       {
         name: "React",
-        img: "https://cdn.simpleicons.org/react/61DAFB",
+        img: ReactLogo,
       },
       {
         name: "TypeScript",
-        img: "https://cdn.simpleicons.org/typescript/3178C6",
+        img: TypeScriptLogo,
       },
       {
         name: "TailwindCSS",
-        img: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+        img: TailwindLogo,
       },
       {
         name: "Shadcn/ui",
-        img: "https://ik.imagekit.io/brunogodoy/imagens_portfolio/tecnologias_img/shadcn.png?updatedAt=1754595518311",
+        img: ShadcnLogo,
       },
       {
         name: "Java",
-        img: "https://ik.imagekit.io/brunogodoy/imagens_portfolio/tecnologias_img/java.png?updatedAt=1750703805184",
+        img: JavaLogo,
       },
       {
         name: "Spring Boot",
-        img: "https://cdn.simpleicons.org/springboot/6DB33F",
+        img: SpringBootLogo,
       },
     ],
     description:
@@ -62,27 +72,27 @@ export const projects: Project[] = [
     tecnologies: [
       {
         name: "React",
-        img: "https://cdn.simpleicons.org/react/61DAFB",
+        img: ReactLogo,
       },
       {
         name: "TypeScript",
-        img: "https://cdn.simpleicons.org/typescript/3178C6",
+        img: TypeScriptLogo,
       },
       {
         name: "TailwindCSS",
-        img: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+        img: TailwindLogo,
       },
       {
         name: "Shadcn/ui",
-        img: "https://ik.imagekit.io/brunogodoy/imagens_portfolio/tecnologias_img/shadcn.png?updatedAt=1754595518311",
+        img: ShadcnLogo,
       },
       {
         name: "Java",
-        img: "https://ik.imagekit.io/brunogodoy/imagens_portfolio/tecnologias_img/java.png?updatedAt=1750703805184",
+        img: JavaLogo,
       },
       {
         name: "Spring Boot",
-        img: "https://cdn.simpleicons.org/springboot/6DB33F",
+        img: SpringBootLogo,
       },
     ],
     description:
@@ -101,23 +111,23 @@ export const projects: Project[] = [
     tecnologies: [
       {
         name: "React",
-        img: "https://cdn.simpleicons.org/react/61DAFB",
+        img: ReactLogo,
       },
       {
         name: "TypeScript",
-        img: "https://cdn.simpleicons.org/typescript/3178C6",
+        img: TypeScriptLogo,
       },
       {
         name: "TailwindCSS",
-        img: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+        img: TailwindLogo,
       },
       {
         name: "Java",
-        img: "https://ik.imagekit.io/brunogodoy/imagens_portfolio/tecnologias_img/java.png?updatedAt=1750703805184",
+        img: JavaLogo,
       },
       {
         name: "Spring Boot",
-        img: "https://cdn.simpleicons.org/springboot/6DB33F",
+        img: SpringBootLogo,
       },
     ],
     description:
@@ -136,15 +146,15 @@ export const projects: Project[] = [
     tecnologies: [
       {
         name: "React",
-        img: "https://cdn.simpleicons.org/react/61DAFB",
+        img: ReactLogo,
       },
       {
         name: "TypeScript",
-        img: "https://cdn.simpleicons.org/typescript/3178C6",
+        img: TypeScriptLogo,
       },
       {
         name: "TailwindCSS",
-        img: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+        img: TailwindLogo,
       },
     ],
     description:
@@ -162,27 +172,27 @@ export const projects: Project[] = [
     tecnologies: [
       {
         name: "React",
-        img: "https://cdn.simpleicons.org/react/61DAFB",
+        img: ReactLogo,
       },
       {
         name: "TypeScript",
-        img: "https://cdn.simpleicons.org/typescript/3178C6",
+        img: TypeScriptLogo,
       },
       {
         name: "TailwindCSS",
-        img: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+        img: TailwindLogo,
       },
       {
         name: "Shadcn/ui",
-        img: "https://ik.imagekit.io/brunogodoy/imagens_portfolio/tecnologias_img/shadcn.png?updatedAt=1754595518311",
+        img: ShadcnLogo,
       },
       {
         name: "Java",
-        img: "https://ik.imagekit.io/brunogodoy/imagens_portfolio/tecnologias_img/java.png?updatedAt=1750703805184",
+        img: JavaLogo,
       },
       {
         name: "Spring Boot",
-        img: "https://cdn.simpleicons.org/springboot/6DB33F",
+        img: SpringBootLogo,
       },
     ],
     description:
@@ -198,19 +208,19 @@ export const projects: Project[] = [
     tecnologies: [
       {
         name: "React Native",
-        img: "https://cdn.simpleicons.org/react/61DAFB",
+        img: ReactLogo,
       },
       {
         name: "TypeScript",
-        img: "https://cdn.simpleicons.org/typescript/3178C6",
+        img: TypeScriptLogo,
       },
       {
         name: "Gluestack-ui",
-        img: "https://ik.imagekit.io/brunogodoy/imagens_portfolio/tecnologias_img/gluestacks.png?updatedAt=1754682872018",
+        img: GluestackLogo,
       },
       {
         name: "Expo",
-        img: "https://ik.imagekit.io/brunogodoy/imagens_portfolio/tecnologias_img/expo.png?updatedAt=1750703805291",
+        img: ExpoLogo,
       },
     ],
     description:
@@ -227,19 +237,19 @@ export const projects: Project[] = [
     tecnologies: [
       {
         name: "React Native",
-        img: "https://cdn.simpleicons.org/react/61DAFB",
+        img: ReactLogo,
       },
       {
         name: "TypeScript",
-        img: "https://cdn.simpleicons.org/typescript/3178C6",
+        img: TypeScriptLogo,
       },
       {
         name: "Expo",
-        img: "https://ik.imagekit.io/brunogodoy/imagens_portfolio/tecnologias_img/expo.png?updatedAt=1750703805291",
+        img: ExpoLogo,
       },
       {
         name: "Firebase",
-        img: "https://ik.imagekit.io/brunogodoy/imagens_portfolio/tecnologias_img/firebase.png?updatedAt=1750703805160",
+        img: FirebaseLogo,
       },
     ],
     description:
