@@ -1,15 +1,21 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import emailjs from "@emailjs/browser";
-import { PUBLIC_KEY, SERVICE_ID_OUTLOOK, TEMPLATE_ID } from "@/utils/keys";
+import {
+  PUBLIC_KEY,
+  RECAPTCHA_SITE_KEY,
+  SERVICE_ID_OUTLOOK,
+  TEMPLATE_ID,
+} from "@/utils/keys";
 import { toast } from "sonner";
 import { FormInput } from "./FormInput";
 import { TextareaInput } from "./TextareaInput";
 import { Button } from "./ui/button";
 import { Spinner } from "phosphor-react";
 import { Form } from "./ui/form";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const formSchema = z.object({
   name: z
@@ -26,6 +32,7 @@ const formSchema = z.object({
 
 export function FormContact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -40,11 +47,20 @@ export function FormContact() {
   async function onSubmit(data: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
 
+    const token = recaptchaRef.current?.getValue();
+
+    if (!token) {
+      toast.error("Por favor, confirme que você não é um robô.");
+      setIsSubmitting(false);
+      return;
+    }
+
     const templateParams = {
       from_name: data.name,
       reply_to: data.email,
       subject: data.subject,
       message: data.message,
+      "g-recaptcha-response": token,
     };
 
     try {
@@ -60,6 +76,7 @@ export function FormContact() {
         description:
           "Sua mensagem foi enviada com sucesso. Agradeço o contato e retornarei em breve.",
       });
+      recaptchaRef.current?.reset();
       form.reset();
     } catch (e) {
       toast.error("Erro ao enviar a mensagem.", {
@@ -105,6 +122,13 @@ export function FormContact() {
           name="message"
           label="Mensagem"
           placeholder="Digite sua mensagem..."
+        />
+
+        <ReCAPTCHA
+          ref={recaptchaRef}
+          sitekey={RECAPTCHA_SITE_KEY}
+          theme="dark"
+          className="self-center"
         />
 
         <Button type="submit" disabled={isSubmitting}>
