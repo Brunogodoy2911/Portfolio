@@ -1,6 +1,7 @@
 import { GithubLogo, LinkedinLogo } from "phosphor-react";
 import { Button } from "./ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
+import { trackEvent } from "@/utils/analytics";
 
 export function Hero() {
   const googleDriveDownloadUrl =
@@ -46,6 +47,9 @@ export function Hero() {
                   href={googleDriveDownloadUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() =>
+                    trackEvent("CV", "Download", "Hero Download Button")
+                  }
                 >
                   Download CV
                 </a>
@@ -63,7 +67,8 @@ export function Hero() {
               href="https://www.linkedin.com/in/brunogodoydev/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn Profile"
+              aria-label="Perfil do LinkedIn"
+              onClick={() => trackEvent("Social", "Click", "LinkedIn Footer")}
             >
               <LinkedinLogo className="size-7" />
             </a>
@@ -73,7 +78,8 @@ export function Hero() {
               href="https://github.com/Brunogodoy2911"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="GitHub Profile"
+              aria-label="Perfil do GitHub"
+              onClick={() => trackEvent("Social", "Click", "GitHub Footer")}
             >
               <GithubLogo className="size-7" />
             </a>

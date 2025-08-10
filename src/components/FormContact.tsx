@@ -16,6 +16,7 @@ import { Button } from "./ui/button";
 import { Spinner } from "phosphor-react";
 import { Form } from "./ui/form";
 import ReCAPTCHA from "react-google-recaptcha";
+import { trackEvent } from "@/utils/analytics";
 
 const formSchema = z.object({
   name: z
@@ -71,6 +72,7 @@ export function FormContact() {
         PUBLIC_KEY
       );
 
+      trackEvent("Contact", "Form Submit", "Success");
       toast.success("Mensagem enviada com sucesso!", {
         duration: 4000,
         description:
