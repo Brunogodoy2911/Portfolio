@@ -7,6 +7,7 @@ import { Contact } from "./components/Contact";
 import { Toaster } from "sonner";
 import { Footer } from "./components/Footer";
 import { initGA } from "./utils/analytics";
+import { ScrollAnimation } from "./components/ScrollAnimation";
 
 export function App() {
   useEffect(() => {
@@ -16,10 +17,23 @@ export function App() {
   return (
     <main>
       <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
+
+      <ScrollAnimation>
+        <Hero />
+      </ScrollAnimation>
+
+      <ScrollAnimation>
+        <About />
+      </ScrollAnimation>
+
+      <ScrollAnimation>
+        <Projects />
+      </ScrollAnimation>
+
+      <ScrollAnimation>
+        <Contact />
+      </ScrollAnimation>
+
       <Footer />
       <Toaster richColors />
     </main>

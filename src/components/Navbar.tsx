@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { navLinks } from "@/utils/navLinks";
 import { useTheme } from "./theme-provider";
 import { Button } from "./ui/button";
@@ -12,6 +13,7 @@ import { Sun, Moon, List } from "phosphor-react";
 
 export function Navbar() {
   const { setTheme, theme } = useTheme();
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="flex justify-between md:justify-around items-center px-6 md:px-12 py-8">
@@ -48,7 +50,7 @@ export function Navbar() {
       </ul>
 
       <div className="md:hidden">
-        <Sheet>
+        <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
             <Button variant="outline" size="icon" aria-label="Abrir menu">
               <List size={24} />
@@ -63,6 +65,13 @@ export function Navbar() {
                 <SheetClose asChild key={link.title}>
                   <a
                     href={link.href}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .querySelector(link.href)
+                        ?.scrollIntoView({ behavior: "smooth" });
+                      setIsOpen(false);
+                    }}
                     className="text-xl transition-colors hover:text-primary"
                   >
                     {link.title}
