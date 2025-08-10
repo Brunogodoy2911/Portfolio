@@ -67,6 +67,10 @@ export const projects: Project[] = [
     imgs: [
       "https://ik.imagekit.io/brunogodoy/Cover%20Projects/ConnectUS/MockUpConnectUs.png?updatedAt=1754696344427",
       "https://ik.imagekit.io/brunogodoy/Cover%20Projects/ConnectUS/Home?updatedAt=1754601893262",
+      "https://ik.imagekit.io/brunogodoy/Cover%20Projects/ConnectUS/Dashboard?updatedAt=1754797475367",
+      "https://ik.imagekit.io/brunogodoy/Cover%20Projects/ConnectUS/Clientes?updatedAt=1754797526866",
+      "https://ik.imagekit.io/brunogodoy/Cover%20Projects/ConnectUS/Oportunidades?updatedAt=1754797526868",
+      "https://ik.imagekit.io/brunogodoy/Cover%20Projects/ConnectUS/Usu%C3%A1rio?updatedAt=1754797526872",
     ],
     title: "ConnectUS",
     tecnologies: [
@@ -131,7 +135,7 @@ export const projects: Project[] = [
       },
     ],
     description:
-      "PharmaShop é o frontend de uma aplicação de e-commerce para uma farmácia, desenvolvido como o Desafio de Performance Goal do Bloco 03 do bootcamp de Desenvolvimento Full Stack Java da Generation Brasil.",
+      "PharmaShop é o frontend de uma aplicação de e-commerce para uma farmácia, desenvolvido como o Desafio de Performance Goal do Bloco 03 do bootcamp de Desenvolvimento Full Stack Java da Generation Brasil. O projeto implementa funcionalidades de CRUD completas, garantindo uma gestão total sobre os dados da farmácia.",
     link_rep: "https://github.com/Brunogodoy2911/PharmaShop",
     link_demo: "https://projeto-final-bloco-03-eta.vercel.app/",
   },

@@ -12,7 +12,7 @@ export function Hero() {
   return (
     <div
       id="hero"
-      className="flex flex-col md:flex-row items-center sm:items-start  justify-center gap-10 md:gap-12 lg:gap-32 mt-12 px-4 h-[38rem]"
+      className="flex flex-col md:flex-row items-center md:items-start justify-center gap-10 md:gap-12 lg:gap-32 mt-12 px-4 md:h-[30rem]"
     >
       <img
         src="https://ik.imagekit.io/brunogodoy/WhatsApp%20Image%202025-04-06%20at%2022.17.19.jpeg?updatedAt=1754336005577"
