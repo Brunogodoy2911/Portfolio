@@ -18,7 +18,7 @@ export function Navbar() {
   return (
     <nav className="flex justify-between md:justify-around items-center px-6 md:px-12 py-8">
       <a
-        href="#home"
+        href="#"
         style={{ fontFamily: "Great Vibes" }}
         className="font-display text-4xl text-primary"
       >
