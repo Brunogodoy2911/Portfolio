@@ -1,69 +1,81 @@
-# React + TypeScript + Vite
+# 📌 Portfólio Pessoal - Bruno Godoy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://ik.imagekit.io/brunogodoy/BG%20(1).png?updatedAt=1754185476808" alt="Logo BG" width="150"/>
+</p>
 
-Currently, two official plugins are available:
+<p align="center"><strong>Versão 1.0.0</strong></p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Badge">
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge">
+  <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E" alt="Vite Badge">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS Badge">
+  <img src="https://img.shields.io/github/last-commit/Brunogodoy2911/portfolio" alt="Last Commit Badge">
+</p>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📄 Sobre o Projeto
+Este é o meu **portfólio pessoal**, uma aplicação **Single-Page** desenvolvida para apresentar minhas **competências**, **projetos** e **trajetória** como Desenvolvedor Full Stack.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+O site foi construído com um **stack moderno**, focado em:
+- Performance
+- Componentização
+- Experiência de usuário rica e interativa
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Além de servir como vitrine para meus trabalhos, este projeto foi uma oportunidade de aprofundar conhecimentos em:
+- Animações com **Framer Motion**
+- Envio de e-mails com **EmailJS**
+- Monitoramento com **Google Analytics**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ✨ Funcionalidades
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🎨 Tema Dark/Light
+- Interface adaptável com troca de tema conforme preferência do usuário.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🖱️ Animações de Scroll
+- Efeitos **fade-in** ativados conforme o usuário rola a página.
+- Implementação com **Framer Motion** para uma navegação fluida.
+
+### 📱 Design Responsivo
+- Layout adaptado para **desktop**, **tablet** e **mobile**.
+
+### 📂 Galeria de Projetos Interativa
+- **Filtragem** de projetos por tecnologia
+- **Carrossel** de imagens com autoplay
+- **Lightbox** para visualização em tela cheia
+
+### 📬 Formulário de Contato Avançado
+- **EmailJS**: envio de e-mails sem backend
+- **Google reCAPTCHA**: segurança contra spam
+- **Zod** + **React Hook Form**: validação robusta com feedback em tempo real
+
+### 📊 Google Analytics
+- Integração com **ReactGA** para monitorar:
+  - Visualizações de página
+  - Cliques em links sociais
+  - Downloads de CV
+
+---
+
+## 🛠️ Tecnologias e Bibliotecas
+
+| Categoria         | Tecnologias |
+|-------------------|-------------|
+| **Frontend**      | React, TypeScript, Vite |
+| **Estilização e UI** | TailwindCSS, Shadcn/ui, Framer Motion, Phosphor Icons |
+| **Formulários**   | React Hook Form, Zod |
+| **Serviços**      | EmailJS, Google Analytics, Google reCAPTCHA |
+
+---
+
+## 📬 Contato
+
+💼 **Portfólio Online:** [Acessar Site](https://brunogodoydev.vercel.app)  
+💌 **E-mail:** brunogodoy29@hotmail.com  
+🔗 **LinkedIn:** [Bruno Godoy](https://www.linkedin.com/in/brunogodoydev)  
+
+---
