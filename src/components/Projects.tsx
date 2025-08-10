@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   Pagination,
   PaginationContent,
@@ -13,10 +13,20 @@ import { ProjectCard } from "./ProjectCard";
 import { Button } from "./ui/button";
 import { filterOptions } from "@/utils/filterOptions";
 
+import { useAnalyticsOnVisible } from "@/hooks/useAnalyticsOnVisible";
+
 export function Projects() {
   const [activeFilter, setActiveFilter] = useState("Todos");
   const [currentPage, setCurrentPage] = useState(1);
   const PROJECTS_PER_PAGE = 3;
+
+  const projectsSectionRef = useRef<HTMLDivElement>(null);
+
+  useAnalyticsOnVisible(projectsSectionRef, {
+    category: "Scroll",
+    action: "View Section",
+    label: "Projects",
+  });
 
   useEffect(() => {
     setCurrentPage(1);
@@ -36,6 +46,7 @@ export function Projects() {
 
   return (
     <div
+      ref={projectsSectionRef}
       id="projects"
       className="flex flex-col items-center justify-center gap-8 my-12 px-4"
     >

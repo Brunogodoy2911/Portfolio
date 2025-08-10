@@ -19,6 +19,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
+import { useAnalyticsOnVisible } from "@/hooks/useAnalyticsOnVisible";
 
 export function ProjectCard({
   imgs,
@@ -30,6 +31,13 @@ export function ProjectCard({
 }: Project) {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
+  const projectCardRef = useRef<HTMLDivElement>(null);
+
+  useAnalyticsOnVisible(projectCardRef, {
+    category: "Project",
+    action: "View",
+    label: title,
+  });
   const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: true }));
 
   useEffect(() => {
@@ -48,7 +56,10 @@ export function ProjectCard({
   const hasMultipleImages = imgs.length > 1;
 
   return (
-    <Card className="flex w-full max-w-5xl flex-col overflow-hidden p-0 sm:flex-row">
+    <Card
+      ref={projectCardRef}
+      className="flex w-full max-w-5xl flex-col overflow-hidden p-0 sm:flex-row"
+    >
       <div className="relative flex items-center justify-center sm:w-2/5 bg-black/5">
         <Gallery>
           {hasMultipleImages ? (
