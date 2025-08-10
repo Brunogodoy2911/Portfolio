@@ -32,7 +32,11 @@ export function TextareaInput({
             <h1 className="text-lg">{label}</h1>
           </FormLabel>
           <FormControl>
-            <Textarea {...field} {...rest} className="resize-none h-25" />
+            <Textarea
+              {...field}
+              {...rest}
+              className="border-gray-300 resize-none h-25"
+            />
           </FormControl>
           <FormMessage />
         </FormItem>

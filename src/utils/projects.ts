@@ -59,7 +59,7 @@ export const projects: Project[] = [
       },
     ],
     description:
-      "O HealthSync é uma plataforma completa para personal trainers e seus alunos, projetada para otimizar a gestão de treinos, acompanhar o progresso e fortalecer a comunicação.",
+      "Desenvolvi uma plataforma Full Stack para personal trainers, centralizando a gestão de alunos e a criação de planos de treino. O sistema otimiza a comunicação e o acompanhamento de progresso, agregando valor tanto para o profissional quanto para o cliente.",
     link_rep: "https://github.com/Grupo-02-Turma-Java-82/HealthSync_Page",
     link_demo: "https://hsync.com.br/",
   },
@@ -100,7 +100,7 @@ export const projects: Project[] = [
       },
     ],
     description:
-      "ConnectUS é um CRM intuitivo para gerenciar clientes (CPF/CNPJ), acompanhar oportunidades de vendas em um pipeline visual e analisar métricas de crescimento através de um dashboard interativo.",
+      "Criei um CRM completo para otimizar o processo de vendas. A plataforma centraliza o cadastro de clientes, permite o gerenciamento de oportunidades com um pipeline Kanban e fornece um dashboard com métricas chave, capacitando a equipe a tomar decisões baseadas em dados.",
     link_rep: "https://github.com/Grupo-02-Turma-Java-82/ConnectUs_CRM_Page",
     link_demo: "https://connectuscrm.netlify.app",
   },
@@ -135,7 +135,7 @@ export const projects: Project[] = [
       },
     ],
     description:
-      "PharmaShop é o frontend de uma aplicação de e-commerce para uma farmácia, desenvolvido como o Desafio de Performance Goal do Bloco 03 do bootcamp de Desenvolvimento Full Stack Java da Generation Brasil. O projeto implementa funcionalidades de CRUD completas, garantindo uma gestão total sobre os dados da farmácia.",
+      "Frontend de um e-commerce farmacêutico com gestão completa de produtos e categorias. Neste projeto, implementei funcionalidades de CRUD (Criar, Ler, Atualizar, Deletar) que interagem com uma API robusta, demonstrando habilidades de integração e manipulação de dados.",
     link_rep: "https://github.com/Brunogodoy2911/PharmaShop",
     link_demo: "https://projeto-final-bloco-03-eta.vercel.app/",
   },
@@ -162,7 +162,7 @@ export const projects: Project[] = [
       },
     ],
     description:
-      "A aplicação Refund 2.0 é um sistema web front-end desenvolvido para gerenciar solicitações de reembolso. O objetivo é permitir que funcionários de uma empresa possam submeter despesas para reembolso e que os gestores possam visualizar e acompanhar essas solicitações. ",
+      "Sistema web para gerenciamento de reembolsos, projetado para simplificar a submissão de despesas por funcionários e o acompanhamento por gestores. O foco foi criar uma interface clara e um fluxo de usuário eficiente para agilizar processos administrativos.",
     link_rep: "https://github.com/Brunogodoy2911/Refund_2.0",
     link_demo: "https://refund-2-0-sigma.vercel.app/",
   },
@@ -200,7 +200,7 @@ export const projects: Project[] = [
       },
     ],
     description:
-      "GameStore é uma aplicação front-end que simula uma loja virtual de jogos. Ela consome dados de uma API para listar produtos, permite que os usuários filtrem os jogos por categoria e gerenciem seus itens em um carrinho de compras funcional. O projeto foi desenvolvido com foco em performance, componentização e uma ótima experiência de usuário.",
+      "Aplicação de e-commerce de jogos com integração de API, filtro de produtos e carrinho de compras funcional. O projeto foi arquitetado com foco em componentização, performance e uma experiência de usuário responsiva e intuitiva.",
     link_rep: "https://github.com/Brunogodoy2911/GameStore",
     link_demo: "https://game-store-rouge-one.vercel.app/",
   },
@@ -228,7 +228,7 @@ export const projects: Project[] = [
       },
     ],
     description:
-      "O Ignite Gym é uma aplicação para você gerenciar seus treinos na academia e ter mais controle sobre os exercícios que está realizando.",
+      "Aplicação mobile para gestão de treinos, permitindo que usuários registrem e acompanhem seus exercícios. O projeto foi desenvolvido com foco em performance nativa e uma interface de usuário limpa para uso rápido na academia.",
     link_rep: "https://github.com/Brunogodoy2911/IgniteGym",
     link_demo: "",
   },
@@ -257,7 +257,7 @@ export const projects: Project[] = [
       },
     ],
     description:
-      "PersonalConnect é um aplicativo desenvolvido como parte do meu Trabalho de Conclusão de Curso (TCC) no curso de Análise e Desenvolvimento de Sistemas na ETEC Hortolândia. O objetivo do projeto é fornecer uma plataforma para personal trainers (treinadores pessoais) gerenciarem e criarem fichas de treinos para seus alunos de forma organizada e eficaz.",
+      "Aplicativo mobile, parte do meu TCC, que serve como uma plataforma para personal trainers gerenciarem seus alunos e fichas de treino. O projeto utiliza Firebase para autenticação e armazenamento de dados em tempo real, garantindo uma solução escalável e eficaz.",
     link_rep: "https://github.com/Brunogodoy2911/PersonalConnect",
     link_demo: "",
   },
