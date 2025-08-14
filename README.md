@@ -65,40 +65,16 @@ Além de servir como vitrine para meus trabalhos, este projeto foi uma oportunid
 
 | Categoria         | Tecnologias |
 |-------------------|-------------|
-| **Frontend**      | React, TypeScript, Vite |
-| **Estilização e UI** | TailwindCSS, Shadcn/ui, Framer Motion, Phosphor Icons, Sonner |
+| **Frontend**      | React, TypeScript, Vite 
+| **Estilização e UI** | TailwindCSS, Shadcn/ui, Framer Motion, Phosphor Icons 
 | **Formulários**   | React Hook Form, Zod |
 | **Serviços**      | EmailJS, Google Analytics, Google reCAPTCHA |
 
 ---
 
-## 📁 Estrutura de Pastas
-
-```plaintext
-/src
-|-- /components
-|   |-- /ui          # Componentes reutilizáveis (Shadcn/ui)
-|   |-- About.tsx
-|   |-- Contact.tsx
-|   |-- ...
-|-- /hooks
-|   |-- useAnalyticsOnVisible.ts
-|-- /lib
-|   |-- utils.ts
-|-- /utils
-|   |-- analytics.ts
-|   |-- projects.ts
-|   |-- ...
-|-- App.tsx          # Componente principal
-|-- main.tsx         # Ponto de entrada
-```
-
----
-
 ## 📬 Contato
 
-💼 **Portfólio Online:** [Acessar Site](https://seu-link-aqui.com)  
-💌 **E-mail:** brunogodoy.dev@gmail.com  
+💼 **Portfólio Online:** [Acessar Site](https://brunogodoydev.vercel.app)  
+💌 **E-mail:** brunogodoy29@hotmail.com  
 🔗 **LinkedIn:** [Bruno Godoy](https://www.linkedin.com/in/brunogodoydev)  
 
----
