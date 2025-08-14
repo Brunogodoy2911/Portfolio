@@ -8,6 +8,7 @@ import { Toaster } from "sonner";
 import { Footer } from "./components/Footer";
 import { initGA } from "./utils/analytics";
 import { ScrollAnimation } from "./components/ScrollAnimation";
+import { Anchor } from "./components/Anchor";
 
 export function App() {
   useEffect(() => {
@@ -35,6 +36,9 @@ export function App() {
       </ScrollAnimation>
 
       <Footer />
+
+      <Anchor />
+
       <Toaster richColors />
     </main>
   );
