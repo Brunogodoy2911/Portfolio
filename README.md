@@ -4,7 +4,7 @@
   <img src="https://ik.imagekit.io/brunogodoy/BG%20(1).png?updatedAt=1754185476808" alt="Logo BG" width="150"/>
 </p>
 
-<p align="center"><strong>Versão 1.0.0</strong></p>
+<p align="center"><strong>Versão 1.0.1</strong></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Badge">
