@@ -65,8 +65,8 @@ Além de servir como vitrine para meus trabalhos, este projeto foi uma oportunid
 
 | Categoria         | Tecnologias |
 |-------------------|-------------|
-| **Frontend**      | React, TypeScript, Vite |
-| **Estilização e UI** | TailwindCSS, Shadcn/ui, Framer Motion, Phosphor Icons |
+| **Frontend**      | React, TypeScript, Vite 
+| **Estilização e UI** | TailwindCSS, Shadcn/ui, Framer Motion, Phosphor Icons 
 | **Formulários**   | React Hook Form, Zod |
 | **Serviços**      | EmailJS, Google Analytics, Google reCAPTCHA |
 
@@ -78,4 +78,3 @@ Além de servir como vitrine para meus trabalhos, este projeto foi uma oportunid
 💌 **E-mail:** brunogodoy29@hotmail.com  
 🔗 **LinkedIn:** [Bruno Godoy](https://www.linkedin.com/in/brunogodoydev)  
 
----

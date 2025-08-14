@@ -1,4 +1,5 @@
 import ReactLogo from "../../public/icons/react.svg";
+import AngularLogo from "../../public/icons/angular.svg";
 import TypeScriptLogo from "../../public/icons/typescript.svg";
 import TailwindLogo from "../../public/icons/tailwind.svg";
 import JavaLogo from "../../public/icons/java.svg";
@@ -7,6 +8,7 @@ import ExpoLogo from "../../public/icons/expo.svg";
 import GluestackLogo from "../../public/icons/gluestacks.svg";
 import ShadcnLogo from "../../public/icons/shadcn.svg";
 import FirebaseLogo from "../../public/icons/firebase.svg";
+import BootStrapLogo from "../../public/icons/bootstrap.svg";
 
 export interface Technology {
   name: string;
@@ -260,5 +262,31 @@ export const projects: Project[] = [
       "Aplicativo mobile, parte do meu TCC, que serve como uma plataforma para personal trainers gerenciarem seus alunos e fichas de treino. O projeto utiliza Firebase para autenticação e armazenamento de dados em tempo real, garantindo uma solução escalável e eficaz.",
     link_rep: "https://github.com/Brunogodoy2911/PersonalConnect",
     link_demo: "",
+  },
+  {
+    imgs: [
+      "https://ik.imagekit.io/brunogodoy/Cover%20Projects/Gerador%20Certificado%20Online/Certificados?updatedAt=1755145391412",
+      "https://ik.imagekit.io/brunogodoy/Cover%20Projects/Gerador%20Certificado%20Online/Novo%20Certificado?updatedAt=1755150012848",
+      "https://ik.imagekit.io/brunogodoy/Cover%20Projects/Gerador%20Certificado%20Online/Certificado?updatedAt=1755145391791",
+    ],
+    title: "Gerador de Certificado Online",
+    tecnologies: [
+      {
+        name: "Angular",
+        img: AngularLogo,
+      },
+      {
+        name: "TypeScript",
+        img: TypeScriptLogo,
+      },
+      {
+        name: "Bootstrap",
+        img: BootStrapLogo,
+      },
+    ],
+    description:
+      "Esta aplicação Angular automatiza a criação de certificados personalizados, substituindo o processo manual demorado e propenso a erros. Com ela, é possível cadastrar, listar e baixar certificados em formato PNG de forma rápida, garantindo um resultado profissional e eficiente.",
+    link_rep: "https://github.com/Brunogodoy2911/Gerador-Certificado-Online",
+    link_demo: "https://geradocertificadoonline.netlify.app",
   },
 ];
