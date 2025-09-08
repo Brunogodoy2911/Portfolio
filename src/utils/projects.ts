@@ -289,4 +289,28 @@ export const projects: Project[] = [
     link_rep: "https://github.com/Brunogodoy2911/Gerador-Certificado-Online",
     link_demo: "https://geradocertificadoonline.netlify.app",
   },
+  {
+    imgs: [
+      "https://ik.imagekit.io/brunogodoy/App%20Comprar.png?updatedAt=1757361917784",
+    ],
+    title: "App Comprar",
+    tecnologies: [
+      {
+        name: "React Native",
+        img: ReactLogo,
+      },
+      {
+        name: "TypeScript",
+        img: TypeScriptLogo,
+      },
+      {
+        name: "Expo",
+        img: ExpoLogo,
+      },
+    ],
+    description:
+      "Um aplicativo de lista de compras feito com React Native e Expo para organizar suas compras de forma simples e eficiente. Crie, gerencie e marque itens, tudo em um só lugar.",
+    link_rep: "https://github.com/Brunogodoy2911/APP_Comprar",
+    link_demo: "https://brunogodoy2911.github.io/Download_APP/",
+  },
 ];
